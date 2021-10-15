@@ -9,6 +9,9 @@ export @prettyexpand1
 export @prettyexpand_md
 export @prettyexpand1_md
 
+const alias = Ref(true)
+const margin = Ref(80)
+
 macro prettyexpand(exp)
     quote
         print($(prettyexpand(exp)))
@@ -26,10 +29,11 @@ function prettyexpand(exp)
         format_text(
             string(
                 prettify(
-                    @macroexpand($exp)
+                    @macroexpand($exp),
+                    alias = alias[],
                 )
             );
-            margin = 80
+            margin = margin[]
         )
     end
 end
@@ -39,10 +43,11 @@ function prettyexpand1(exp)
         format_text(
             string(
                 prettify(
-                    @macroexpand1($exp)
+                    @macroexpand1($exp),
+                    alias = alias[],
                 )
             );
-            margin = 80
+            margin = margin[]
         )
     end
 end
