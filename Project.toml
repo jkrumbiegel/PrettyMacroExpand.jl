@@ -3,6 +3,11 @@ uuid = "4b641345-6b5a-4a0d-a560-a2ad7341fdb7"
 authors = ["Julius Krumbiegel <julius.krumbiegel@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+JuliaFormatter = "98e50ef6-434e-11e9-1051-2b60c6c9e899"
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+Markdown = "d6f4376e-aef5-505a-96c1-9c027394607a"
+
 [compat]
 julia = "1"
 
