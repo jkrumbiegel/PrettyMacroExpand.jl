@@ -24,6 +24,7 @@ PrettyMacroExpand.print(
         margin = PrettyMacroExpand.margin[],
     ),
 )
+
 julia> @macroexpand1 @prettyexpand1 x + y
 quote
     #= /Users/username/.julia/dev/PrettyMacroExpand/src/PrettyMacroExpand.jl:20 =#
