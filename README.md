@@ -34,3 +34,5 @@ quote
         end)
 end
 ```
+
+You can change the preferred code width with `PrettyMacroExpand.margin[] = 70` and turn of animal name aliasing of temporary variables with `PrettyMacroExpand.alias[] = false`.
